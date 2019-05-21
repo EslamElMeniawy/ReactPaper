@@ -65,5 +65,11 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(<VERSION>\\)? *\\(site=[a-z,_]*
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 
+# react-native-paper
+module.file_ext=.js
+module.file_ext=.native.js
+module.file_ext=.android.js
+module.file_ext=.ios.js
+
 [version]
-^0.92.0
+^0.93.0
