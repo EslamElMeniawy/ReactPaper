@@ -1,0 +1,35 @@
+import React from 'react';
+import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { Avatar, Colors } from 'react-native-paper';
+
+export default function AvatarScreen() {
+  return (
+    <SafeAreaView>
+      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <ScrollView>
+        <Avatar.Icon icon="folder" style={{ marginVertical: 16, marginHorizontal: 16 }} />
+        <Avatar.Icon icon="folder" size={24} style={{ marginVertical: 16, marginHorizontal: 16 }} />
+        <Avatar.Icon
+          icon="folder"
+          color={Colors.red800}
+          style={{ marginVertical: 16, marginHorizontal: 16 }}
+        />
+        <Avatar.Icon
+          icon="folder"
+          theme={{ colors: { primary: Colors.red800 } }}
+          style={{ marginVertical: 16, marginHorizontal: 16 }}
+        />
+        <Avatar.Image
+          source={{ uri: 'https://facebook.github.io/react/logo-og.png' }}
+          style={{ marginVertical: 16, marginHorizontal: 16 }}
+        />
+        <Avatar.Image
+          source={{ uri: 'https://facebook.github.io/react/logo-og.png' }}
+          size={24}
+          style={{ marginVertical: 16, marginHorizontal: 16 }}
+        />
+        <Avatar.Text label="XD" style={{ marginVertical: 16, marginHorizontal: 16 }} />
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
