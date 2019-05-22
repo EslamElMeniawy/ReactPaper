@@ -7,7 +7,7 @@ export default function MainScreen({ navigation }) {
   return (
     <SafeAreaView>
       <StatusBar barStyle="light-content" backgroundColor="#34515e" />
-      <ScrollView>
+      <ScrollView style={{ marginBottom: 16 }}>
         <Button
           mode="contained"
           style={{ marginHorizontal: 16, marginTop: 16 }}
@@ -115,6 +115,15 @@ export default function MainScreen({ navigation }) {
           }}
         >
           {'Data Table & Surface'}
+        </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('Dialog');
+          }}
+        >
+          {'Dialog'}
         </Button>
       </ScrollView>
     </SafeAreaView>
