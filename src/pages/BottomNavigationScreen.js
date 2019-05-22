@@ -28,8 +28,15 @@ export default class BottomNavigationScreen extends React.PureComponent {
   state = {
     index: 0,
     routes: [
-      { key: 'music', title: 'Music', icon: 'queue-music' },
-      { key: 'albums', title: 'Albums', icon: 'album' },
+      {
+        key: 'music',
+        title: 'Music',
+        icon: 'queue-music',
+        badge: true,
+      },
+      {
+        key: 'albums', title: 'Albums', icon: 'album', badge: '5',
+      },
       { key: 'recents', title: 'Recents', icon: 'history' },
     ],
   };
