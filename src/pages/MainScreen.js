@@ -39,6 +39,24 @@ export default function MainScreen({ navigation }) {
           mode="contained"
           style={{ marginHorizontal: 16, marginTop: 16 }}
           onPress={() => {
+            navigation.navigate('Badge');
+          }}
+        >
+          {'Badge'}
+        </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('Banner');
+          }}
+        >
+          {'Banner'}
+        </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
             navigation.navigate('Buttons');
           }}
         >
