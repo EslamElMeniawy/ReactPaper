@@ -12,6 +12,7 @@ import BottomNavigationScreen from './pages/BottomNavigationScreen';
 import ButtonsScreen from './pages/ButtonsScreen';
 import TypographyScreen from './pages/TypographyScreen';
 import CardScreen from './pages/CardScreen';
+import CheckboxScreen from './pages/CheckboxScreen';
 
 const AppNavigator = createStackNavigator(
   {
@@ -25,6 +26,7 @@ const AppNavigator = createStackNavigator(
     Buttons: ButtonsScreen,
     Typography: TypographyScreen,
     Card: CardScreen,
+    Checkbox: CheckboxScreen,
   },
   {
     initialRouteName: 'Main',
