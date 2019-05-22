@@ -98,6 +98,15 @@ export default function MainScreen({ navigation }) {
         >
           {'Checkbox'}
         </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('Chip');
+          }}
+        >
+          {'Chip'}
+        </Button>
       </ScrollView>
     </SafeAreaView>
   );
