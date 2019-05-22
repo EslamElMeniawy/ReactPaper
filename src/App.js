@@ -11,6 +11,7 @@ import BannerScreen from './pages/BannerScreen';
 import BottomNavigationScreen from './pages/BottomNavigationScreen';
 import ButtonsScreen from './pages/ButtonsScreen';
 import TypographyScreen from './pages/TypographyScreen';
+import CardScreen from './pages/CardScreen';
 
 const AppNavigator = createStackNavigator(
   {
@@ -23,6 +24,7 @@ const AppNavigator = createStackNavigator(
     BottomNavigation: BottomNavigationScreen,
     Buttons: ButtonsScreen,
     Typography: TypographyScreen,
+    Card: CardScreen,
   },
   {
     initialRouteName: 'Main',
