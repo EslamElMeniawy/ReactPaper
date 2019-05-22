@@ -107,6 +107,15 @@ export default function MainScreen({ navigation }) {
         >
           {'Chip'}
         </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('DataTable');
+          }}
+        >
+          {'Data Table & Surface'}
+        </Button>
       </ScrollView>
     </SafeAreaView>
   );

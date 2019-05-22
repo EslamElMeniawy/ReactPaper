@@ -14,6 +14,7 @@ import TypographyScreen from './pages/TypographyScreen';
 import CardScreen from './pages/CardScreen';
 import CheckboxScreen from './pages/CheckboxScreen';
 import ChipScreen from './pages/ChipScreen';
+import DataTableScreen from './pages/DataTableScreen';
 
 const AppNavigator = createStackNavigator(
   {
@@ -29,6 +30,7 @@ const AppNavigator = createStackNavigator(
     Card: CardScreen,
     Checkbox: CheckboxScreen,
     Chip: ChipScreen,
+    DataTable: DataTableScreen,
   },
   {
     initialRouteName: 'Main',
