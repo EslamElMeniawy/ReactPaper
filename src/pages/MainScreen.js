@@ -71,6 +71,15 @@ export default function MainScreen({ navigation }) {
         >
           {'Buttons'}
         </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('Typography');
+          }}
+        >
+          {'Typography'}
+        </Button>
       </ScrollView>
     </SafeAreaView>
   );

@@ -10,6 +10,7 @@ import BadgeScreen from './pages/BadgeScreen';
 import BannerScreen from './pages/BannerScreen';
 import BottomNavigationScreen from './pages/BottomNavigationScreen';
 import ButtonsScreen from './pages/ButtonsScreen';
+import TypographyScreen from './pages/TypographyScreen';
 
 const AppNavigator = createStackNavigator(
   {
@@ -21,6 +22,7 @@ const AppNavigator = createStackNavigator(
     Banner: BannerScreen,
     BottomNavigation: BottomNavigationScreen,
     Buttons: ButtonsScreen,
+    Typography: TypographyScreen,
   },
   {
     initialRouteName: 'Main',
