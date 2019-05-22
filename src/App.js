@@ -8,6 +8,7 @@ import ProgressScreen from './pages/ProgressScreen';
 import AppBarScreen from './pages/AppBarScreen';
 import BadgeScreen from './pages/BadgeScreen';
 import BannerScreen from './pages/BannerScreen';
+import BottomNavigationScreen from './pages/BottomNavigationScreen';
 import ButtonsScreen from './pages/ButtonsScreen';
 
 const AppNavigator = createStackNavigator(
@@ -18,6 +19,7 @@ const AppNavigator = createStackNavigator(
     AppBar: AppBarScreen,
     Badge: BadgeScreen,
     Banner: BannerScreen,
+    BottomNavigation: BottomNavigationScreen,
     Buttons: ButtonsScreen,
   },
   {

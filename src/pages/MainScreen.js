@@ -24,7 +24,7 @@ export default function MainScreen({ navigation }) {
             navigation.navigate('AppBar');
           }}
         >
-          {'AppBar'}
+          {'App Bar'}
         </Button>
         <Button
           mode="contained"
@@ -52,6 +52,15 @@ export default function MainScreen({ navigation }) {
           }}
         >
           {'Banner'}
+        </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('BottomNavigation');
+          }}
+        >
+          {'Bottom Navigation'}
         </Button>
         <Button
           mode="contained"
