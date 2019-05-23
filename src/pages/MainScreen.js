@@ -143,6 +143,15 @@ export default function MainScreen({ navigation }) {
         >
           {'FAB'}
         </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('TextInput');
+          }}
+        >
+          {'Text Input & Helper Text'}
+        </Button>
       </ScrollView>
     </SafeAreaView>
   );

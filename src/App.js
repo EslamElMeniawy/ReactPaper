@@ -18,6 +18,7 @@ import DataTableScreen from './pages/DataTableScreen';
 import DialogScreen from './pages/DialogScreen';
 import DrawerScreen from './pages/DrawerScreen';
 import FABScreen from './pages/FABScreen';
+import TextInputScreen from './pages/TextInputScreen';
 
 const AppNavigator = createStackNavigator(
   {
@@ -37,6 +38,7 @@ const AppNavigator = createStackNavigator(
     Dialog: DialogScreen,
     Drawer: DrawerScreen,
     FAB: FABScreen,
+    TextInput: TextInputScreen,
   },
   {
     initialRouteName: 'Main',
