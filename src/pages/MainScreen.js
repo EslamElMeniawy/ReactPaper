@@ -125,6 +125,15 @@ export default function MainScreen({ navigation }) {
         >
           {'Dialog'}
         </Button>
+        <Button
+          mode="contained"
+          style={{ marginHorizontal: 16, marginTop: 16 }}
+          onPress={() => {
+            navigation.navigate('Drawer');
+          }}
+        >
+          {'Drawer & Divider'}
+        </Button>
       </ScrollView>
     </SafeAreaView>
   );

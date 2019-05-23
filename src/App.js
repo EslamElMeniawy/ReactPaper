@@ -16,6 +16,7 @@ import CheckboxScreen from './pages/CheckboxScreen';
 import ChipScreen from './pages/ChipScreen';
 import DataTableScreen from './pages/DataTableScreen';
 import DialogScreen from './pages/DialogScreen';
+import DrawerScreen from './pages/DrawerScreen';
 
 const AppNavigator = createStackNavigator(
   {
@@ -33,6 +34,7 @@ const AppNavigator = createStackNavigator(
     Chip: ChipScreen,
     DataTable: DataTableScreen,
     Dialog: DialogScreen,
+    Drawer: DrawerScreen,
   },
   {
     initialRouteName: 'Main',
