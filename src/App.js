@@ -56,6 +56,12 @@ const theme = {
     primary: '#607d8b',
     accent: '#8b6e60',
   },
+  fonts: {
+    regular: 'Cairo-Regular',
+    medium: 'Cairo-SemiBold',
+    light: 'Cairo-Light',
+    thin: 'Cairo-ExtraLight',
+  },
 };
 
 export default class App extends React.PureComponent {

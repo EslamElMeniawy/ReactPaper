@@ -58,6 +58,10 @@
 		C7367407D3F742F0A37DA662 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A1CB9E653F471B994D1255 /* Zocial.ttf */; };
 		0894E80502F4433B8CE181A2 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1068D4CCCEA84420AAC339B6 /* libRNGestureHandler.a */; };
 		FC6246E4A9D34D5EB6916992 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8857D86332C04216A4ADAFCD /* libRNGestureHandler-tvOS.a */; };
+		4C0D42B8AB4D469DA96CA6EF /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3237351BC74A20BBD24816 /* Cairo-ExtraLight.ttf */; };
+		D3C3BB6CE2FE4F2EA6A20308 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72E435C703BF454F835E612B /* Cairo-Light.ttf */; };
+		D339C8A0DB09462F8DB7215C /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54E10F7CB8934997A13AE507 /* Cairo-Regular.ttf */; };
+		3E66C1DD808445D5B2D0CDBE /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 833557B456D24084BE87A0C4 /* Cairo-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,6 +390,10 @@
 		87AA955AD74E4303A0C1E85E /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		1068D4CCCEA84420AAC339B6 /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		8857D86332C04216A4ADAFCD /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; name = "libRNGestureHandler-tvOS.a"; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		3D3237351BC74A20BBD24816 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Cairo-ExtraLight.ttf"; path = "../assets/fonts/Cairo-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72E435C703BF454F835E612B /* Cairo-Light.ttf */ = {isa = PBXFileReference; name = "Cairo-Light.ttf"; path = "../assets/fonts/Cairo-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		54E10F7CB8934997A13AE507 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; name = "Cairo-Regular.ttf"; path = "../assets/fonts/Cairo-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		833557B456D24084BE87A0C4 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; name = "Cairo-SemiBold.ttf"; path = "../assets/fonts/Cairo-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,6 +683,10 @@
 				B32CE0E3A9814DA09446EBE4 /* Octicons.ttf */,
 				EE5061CE4B25419DA7949281 /* SimpleLineIcons.ttf */,
 				29A1CB9E653F471B994D1255 /* Zocial.ttf */,
+				3D3237351BC74A20BBD24816 /* Cairo-ExtraLight.ttf */,
+				72E435C703BF454F835E612B /* Cairo-Light.ttf */,
+				54E10F7CB8934997A13AE507 /* Cairo-Regular.ttf */,
+				833557B456D24084BE87A0C4 /* Cairo-SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1141,6 +1153,10 @@
 				28E54DBA274D4C29989CAC16 /* Octicons.ttf in Resources */,
 				28FAB1EF52CA4865A6505922 /* SimpleLineIcons.ttf in Resources */,
 				C7367407D3F742F0A37DA662 /* Zocial.ttf in Resources */,
+				4C0D42B8AB4D469DA96CA6EF /* Cairo-ExtraLight.ttf in Resources */,
+				D3C3BB6CE2FE4F2EA6A20308 /* Cairo-Light.ttf in Resources */,
+				D339C8A0DB09462F8DB7215C /* Cairo-Regular.ttf in Resources */,
+				3E66C1DD808445D5B2D0CDBE /* Cairo-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
