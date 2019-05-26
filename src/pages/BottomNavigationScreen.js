@@ -1,27 +1,25 @@
 /* eslint-disable react/no-unused-state */
 import React from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
 import { BottomNavigation, Text } from 'react-native-paper';
 
+import Container from '../components/Container';
+
 const MusicRoute = () => (
-  <SafeAreaView>
-    <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+  <Container>
     <Text>Music</Text>
-  </SafeAreaView>
+  </Container>
 );
 
 const AlbumsRoute = () => (
-  <SafeAreaView>
-    <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+  <Container>
     <Text>Albums</Text>
-  </SafeAreaView>
+  </Container>
 );
 
 const RecentsRoute = () => (
-  <SafeAreaView>
-    <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+  <Container>
     <Text>Recents</Text>
-  </SafeAreaView>
+  </Container>
 );
 
 export default class BottomNavigationScreen extends React.PureComponent {
@@ -35,7 +33,10 @@ export default class BottomNavigationScreen extends React.PureComponent {
         badge: true,
       },
       {
-        key: 'albums', title: 'Albums', icon: 'album', badge: '5',
+        key: 'albums',
+        title: 'Albums',
+        icon: 'album',
+        badge: '5',
       },
       { key: 'recents', title: 'Recents', icon: 'history' },
     ],

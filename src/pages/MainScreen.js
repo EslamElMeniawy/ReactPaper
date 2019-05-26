@@ -1,12 +1,13 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Button } from 'react-native-paper';
 import PropTypes from 'prop-types';
 
+import Container from '../components/Container';
+
 export default function MainScreen({ navigation }) {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView style={{ marginBottom: 16 }}>
         <Button
           mode="contained"
@@ -153,7 +154,7 @@ export default function MainScreen({ navigation }) {
           {'Text Input & Helper Text'}
         </Button>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }
 

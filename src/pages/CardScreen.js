@@ -1,13 +1,14 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import {
   Card, Avatar, IconButton, Title, Paragraph, Button,
 } from 'react-native-paper';
 
+import Container from '../components/Container';
+
 export default function CardScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Card elevation={8} style={{ marginHorizontal: 16, marginVertical: 16 }}>
           <Card.Title
@@ -27,6 +28,6 @@ export default function CardScreen() {
           </Card.Actions>
         </Card>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

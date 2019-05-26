@@ -1,10 +1,10 @@
 import React from 'react';
-import {
-  SafeAreaView, StatusBar, Image, View,
-} from 'react-native';
+import { Image, View } from 'react-native';
 import {
   Banner, Avatar, Colors, Button,
 } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default class BannerScreen extends React.PureComponent {
   state = {
@@ -15,8 +15,7 @@ export default class BannerScreen extends React.PureComponent {
   render() {
     const { banner1Visible, banner2Visible } = this.state;
     return (
-      <SafeAreaView>
-        <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <Container>
         <Banner
           visible={banner1Visible}
           actions={[
@@ -62,7 +61,7 @@ export default class BannerScreen extends React.PureComponent {
           <Button onPress={() => this.setState({ banner1Visible: true })}>Banner 1</Button>
           <Button onPress={() => this.setState({ banner2Visible: true })}>Banner 2</Button>
         </View>
-      </SafeAreaView>
+      </Container>
     );
   }
 }

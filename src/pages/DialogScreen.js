@@ -1,8 +1,10 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import {
   Button, Portal, Dialog, Paragraph,
 } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default class DialogScreen extends React.PureComponent {
   state = {
@@ -17,8 +19,7 @@ export default class DialogScreen extends React.PureComponent {
     const { visible } = this.state;
 
     return (
-      <SafeAreaView>
-        <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <Container>
         <ScrollView>
           <Button onPress={this.showDialog}>Show Dialog</Button>
           <Portal>
@@ -38,7 +39,7 @@ export default class DialogScreen extends React.PureComponent {
             </Dialog>
           </Portal>
         </ScrollView>
-      </SafeAreaView>
+      </Container>
     );
   }
 }

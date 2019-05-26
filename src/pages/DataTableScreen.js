@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { DataTable, Surface } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default function DataTableScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Surface
           style={{
@@ -45,6 +46,6 @@ export default function DataTableScreen() {
           </DataTable>
         </Surface>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

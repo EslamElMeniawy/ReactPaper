@@ -1,6 +1,7 @@
 import React from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
 import { FAB, Portal } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default class DrawerScreen extends React.PureComponent {
   state = {
@@ -11,8 +12,7 @@ export default class DrawerScreen extends React.PureComponent {
     const { fabOpen } = this.state;
 
     return (
-      <SafeAreaView>
-        <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <Container>
         <FAB
           icon="add"
           onPress={() => {}}
@@ -81,7 +81,7 @@ export default class DrawerScreen extends React.PureComponent {
             onStateChange={({ open }) => this.setState({ fabOpen: open })}
           />
         </Portal>
-      </SafeAreaView>
+      </Container>
     );
   }
 }

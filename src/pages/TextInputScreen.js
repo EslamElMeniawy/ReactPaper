@@ -1,6 +1,8 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { TextInput, HelperText } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default class DrawerScreen extends React.PureComponent {
   state = {
@@ -23,8 +25,7 @@ export default class DrawerScreen extends React.PureComponent {
     } = this.state;
 
     return (
-      <SafeAreaView>
-        <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <Container>
         <ScrollView style={{ marginBottom: 16 }}>
           <TextInput
             label="Default Text Input"
@@ -74,7 +75,7 @@ export default class DrawerScreen extends React.PureComponent {
             {'Email address is invalid!'}
           </HelperText>
         </ScrollView>
-      </SafeAreaView>
+      </Container>
     );
   }
 }

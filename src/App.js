@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
@@ -57,10 +58,17 @@ const theme = {
   },
 };
 
-export default function App() {
-  return (
-    <PaperProvider theme={theme}>
-      <AppContainer />
-    </PaperProvider>
-  );
+export default class App extends React.PureComponent {
+  componentDidMount() {
+    StatusBar.setBarStyle('light-content');
+    StatusBar.setBackgroundColor('#34515e');
+  }
+
+  render() {
+    return (
+      <PaperProvider theme={theme}>
+        <AppContainer />
+      </PaperProvider>
+    );
+  }
 }

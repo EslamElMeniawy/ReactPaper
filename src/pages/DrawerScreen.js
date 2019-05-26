@@ -1,6 +1,8 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Drawer, Divider } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default class DrawerScreen extends React.PureComponent {
   state = {
@@ -11,8 +13,7 @@ export default class DrawerScreen extends React.PureComponent {
     const { active } = this.state;
 
     return (
-      <SafeAreaView>
-        <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <Container>
         <ScrollView>
           <Drawer.Item label="Default drawer item" />
           <Drawer.Item label="Icon drawer item" icon="folder" />
@@ -37,7 +38,7 @@ export default class DrawerScreen extends React.PureComponent {
             />
           </Drawer.Section>
         </ScrollView>
-      </SafeAreaView>
+      </Container>
     );
   }
 }

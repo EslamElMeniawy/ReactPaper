@@ -1,14 +1,13 @@
 import React from 'react';
-import {
-  SafeAreaView, StatusBar, ScrollView, View, Image,
-} from 'react-native';
+import { ScrollView, View, Image } from 'react-native';
 import { Appbar } from 'react-native-paper';
 import PropTypes from 'prop-types';
 
+import Container from '../components/Container';
+
 export default function AppBarScreen({ navigation }) {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Appbar.Header>
           <Appbar.BackAction onPress={() => navigation.goBack()} style={{ marginHorizontal: 8 }} />
@@ -49,7 +48,7 @@ export default function AppBarScreen({ navigation }) {
           <Appbar.Action icon="search" onPress={() => {}} />
         </Appbar.Header>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }
 

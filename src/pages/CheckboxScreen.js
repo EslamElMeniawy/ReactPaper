@@ -1,6 +1,8 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Checkbox } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default class CardScreen extends React.PureComponent {
   state = {
@@ -11,8 +13,7 @@ export default class CardScreen extends React.PureComponent {
     const { checked } = this.state;
 
     return (
-      <SafeAreaView>
-        <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+      <Container>
         <ScrollView>
           <Checkbox status="checked" style={{ marginHorizontal: 16, marginVertical: 16 }} />
           <Checkbox status="unchecked" style={{ marginHorizontal: 16, marginVertical: 16 }} />
@@ -59,7 +60,7 @@ export default class CardScreen extends React.PureComponent {
             style={{ marginHorizontal: 16, marginVertical: 16 }}
           />
         </ScrollView>
-      </SafeAreaView>
+      </Container>
     );
   }
 }

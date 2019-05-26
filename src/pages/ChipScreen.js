@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Chip, Avatar } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default function ChipScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Chip style={{ marginVertical: 16, marginHorizontal: 16 }}>Default Chip</Chip>
         <Chip mode="flat" style={{ marginVertical: 16, marginHorizontal: 16 }}>
@@ -36,6 +37,6 @@ export default function ChipScreen() {
           {'Closable Chip'}
         </Chip>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

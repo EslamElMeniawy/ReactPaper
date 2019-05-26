@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Badge, Colors } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default function BadgeScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Badge style={{ marginVertical: 16, marginHorizontal: 16 }}>5</Badge>
         <Badge size={30} style={{ marginVertical: 16, marginHorizontal: 16 }}>
@@ -19,6 +20,6 @@ export default function BadgeScreen() {
           {5}
         </Badge>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

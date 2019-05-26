@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Button } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default function ButtonsScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Button onPress={() => {}} style={{ marginHorizontal: 16, marginTop: 16 }}>
           {'Button'}
@@ -46,6 +47,6 @@ export default function ButtonsScreen() {
           {'Button'}
         </Button>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

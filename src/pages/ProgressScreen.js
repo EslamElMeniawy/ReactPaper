@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { ActivityIndicator, ProgressBar, Colors } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default function ProgressScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <ActivityIndicator style={{ marginVertical: 16 }} />
         <ActivityIndicator color={Colors.red800} style={{ marginVertical: 16 }} />
@@ -19,6 +20,6 @@ export default function ProgressScreen() {
           style={{ marginVertical: 16, marginHorizontal: 16 }}
         />
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

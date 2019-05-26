@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Avatar, Colors } from 'react-native-paper';
+
+import Container from '../components/Container';
 
 export default function AvatarScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Avatar.Icon icon="folder" style={{ marginVertical: 16, marginHorizontal: 16 }} />
         <Avatar.Icon icon="folder" size={24} style={{ marginVertical: 16, marginHorizontal: 16 }} />
@@ -30,6 +31,6 @@ export default function AvatarScreen() {
         />
         <Avatar.Text label="XD" style={{ marginVertical: 16, marginHorizontal: 16 }} />
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }

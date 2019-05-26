@@ -1,13 +1,14 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import {
   Caption, Headline, Paragraph, Subheading, Text, Title,
 } from 'react-native-paper';
 
+import Container from '../components/Container';
+
 export default function TypographyScreen() {
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#34515e" />
+    <Container>
       <ScrollView>
         <Caption style={{ marginVertical: 16, marginHorizontal: 16 }}>Caption</Caption>
         <Headline style={{ marginVertical: 16, marginHorizontal: 16 }}>Headline</Headline>
@@ -16,6 +17,6 @@ export default function TypographyScreen() {
         <Text style={{ marginVertical: 16, marginHorizontal: 16 }}>Text</Text>
         <Title style={{ marginVertical: 16, marginHorizontal: 16 }}>Title</Title>
       </ScrollView>
-    </SafeAreaView>
+    </Container>
   );
 }
