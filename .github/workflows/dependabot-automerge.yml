@@ -1,0 +1,24 @@
+name: Dependabot Auto-Merge
+
+on:
+  pull_request:
+    # Trigger only when Dependabot opens or updates a PR
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  dependabot-merge:
+    runs-on: ubuntu-latest
+    # Only run if the PR was actually created by Dependabot
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Approve and Enable Auto-Merge
+        run: |
+          gh pr review --approve "$PR_URL"
+          gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
